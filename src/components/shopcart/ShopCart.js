@@ -91,8 +91,13 @@ export class ShopCart extends Component {
 }
 
 const mapStateToProps = (state) => {
-  let { cart, cartTotal, currencies, totalCartProductQuantity, tax } =
-    state.shop;
+  let {
+    cart,
+    cartTotal,
+    currencies,
+    totalCartProductQuantity,
+    tax,
+  } = state.shop;
   let { selectedCurrency } = currencies;
   return {
     cart,

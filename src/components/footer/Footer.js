@@ -19,6 +19,8 @@ import {
   LogoImage,
 } from "../../styled-compomets/Global-style-theme";
 
+import { Link } from "react-router-dom";
+
 import logo from "../../asset/a-logo.png";
 import pay2 from "../../asset/payment-2-1.png";
 import pay3 from "../../asset/payment-3-1.png";
@@ -37,19 +39,22 @@ export default class Footer extends Component {
             <ShopLink to={"/"}>
               <FooterLinkText>HOME</FooterLinkText>
             </ShopLink>
-            <ShopLink to={"/"}>
+            <ShopLink to={"/all"}>
               <FooterLinkText>SHOP</FooterLinkText>
             </ShopLink>
-            <ShopLink to={"/"}>
-              <FooterLinkText>PRODUCT</FooterLinkText>
+            <ShopLink to={"/cart"}>
+              <FooterLinkText>CART</FooterLinkText>
             </ShopLink>
           </FooterLinkContainer>
 
           <FooterBodyContainer>
-            <LogoContainer>
-              <LogoText>SPREE SHOP</LogoText>
-              <LogoImage src={logo} />
-            </LogoContainer>
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              <LogoContainer>
+                <LogoText>SPREE SHOP</LogoText>
+                <LogoImage src={logo} />
+              </LogoContainer>
+            </Link>
+
             <br />
             <FooterBodyText>
               no 5 spree shop avenue off logan road, lagos,Nigeria

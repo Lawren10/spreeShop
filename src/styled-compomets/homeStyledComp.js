@@ -10,6 +10,14 @@ export const HomeTopContainer = styled.div`
   height: 140vh;
   position: relative;
   background-color: #fafafa;
+
+  @media screen and (max-width: 920px) {
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 550px) {
+    height: 120vh;
+  }
 `;
 
 export const HomeTextContainer = styled.div`
@@ -32,12 +40,16 @@ export const HomeTextPri = styled.h1`
   text-shadow: 0px 0px rgba(0, 0, 0);
   color: white;
   width: 80%;
+  @media screen and (max-width: 920px) {
+    font-size: 7rem;
+  }
+
   @media screen and (max-width: 550px) {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   @media screen and (max-width: 420px) {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 `;
 
@@ -101,6 +113,10 @@ export const ItemNumberBox = styled.div`
   top: 70%;
   /* border: 1px solid red; */
   padding: 1rem;
+  @media screen and (max-width: 920px) {
+    left: 5rem;
+    top: 80%;
+  }
   @media screen and (max-width: 550px) {
     left: 3rem;
     top: 80%;
@@ -117,9 +133,15 @@ export const ItemNumberText = styled.h6`
   /* letter-spacing: 2px; */
   text-shadow: 0px 0px rgba(0, 0, 0);
   color: white;
-  @media screen and (max-width: 420px) {
-    font-size: 2rem;
+  @media screen and (max-width: 920px) {
+    font-size: 2.5rem;
   }
+  @media screen and (max-width: 550px) {
+    font-size: 1.5rem;
+  }
+  /* @media screen and (max-width: 420px) {
+    font-size: 1.8rem;
+  } */
 `;
 
 export const HomeTextSec = styled.h2`
@@ -169,7 +191,7 @@ export const HomeMiddlePicBox = styled.div`
   justify-content: center;
   width: 100%;
   height: 120vh;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 920px) {
     flex-direction: column;
     height: auto;
   }
@@ -181,7 +203,7 @@ export const MiddlePicLeftBox = styled.div`
   position: relative;
   overflow: hidden;
   transition: all 1s ease-in;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 920px) {
     width: 100%;
     height: 100vh;
   }
@@ -192,7 +214,7 @@ export const MiddlePicRightBox = styled.div`
   position: relative;
   overflow: hidden;
   transition: all 1s ease-in;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 920px) {
     width: 100%;
     height: 100vh;
   }
@@ -242,7 +264,7 @@ export const HomeImageBottom = styled.img`
 export const FeatureSectionContainer = styled.section`
   width: 100%;
   height: auto;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0 10rem 0;
 `;
 
 export const FeatureSectionHeader = styled.h2`

@@ -45,7 +45,7 @@ export const CategoriesNavLinkWrap = styled.div`
   display: ${({ home }) => (home ? "none" : "block")};
   @media screen and (max-width: 550px) {
     width: 100%;
-    display: flex;
+    display: ${({ home }) => (home ? "none" : "flex")};
     align-items: center;
     justify-content: space-evenly;
     /* gap: 1rem; */
@@ -242,9 +242,10 @@ export const GoToShopLink = styled(Link)`
   font-style: italic;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   position: relative;
   margin-left: auto;
+  text-decoration: none;
   @media screen and (max-width: 550px) {
     align-self: center;
     margin-left: 0;

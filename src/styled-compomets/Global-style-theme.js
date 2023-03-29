@@ -74,6 +74,9 @@ export const LogoContainer = styled.div`
   position: relative;
   margin: auto;
   width: 20%;
+  @media screen and (max-width: 920px) {
+    width: 35%;
+  }
   @media screen and (max-width: 550px) {
     width: 55%;
   }

@@ -117,7 +117,8 @@ export const OutOfStockText = styled.div`
 export const MainContainer = styled.main`
   padding: 8rem 1rem;
   @media screen and (max-width: 550px) {
-    padding: 18rem 1rem 8rem 1rem;
+    padding: ${({ home }) =>
+      home === "true" ? "4rem 1rem 8rem 1rem" : "18rem 1rem 8rem 1rem"};
   }
 `;
 

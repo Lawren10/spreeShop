@@ -116,6 +116,9 @@ export const QuantityWraper = styled.div`
   @media screen and (max-width: 920px) {
     left: ${({ mini }) => (mini === "true" ? "63%" : "65%")};
   }
+  @media screen and (max-width: 820px) {
+    left: ${({ mini }) => (mini === "true" ? "55%" : "61%")};
+  }
   @media screen and (max-width: 550px) {
     position: ${({ mini }) => (mini === "true" ? "absolute" : "initial")};
     flex-direction: ${({ mini }) => (mini === "true" ? "column" : "row")};

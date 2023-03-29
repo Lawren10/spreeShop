@@ -73,7 +73,7 @@ export default class TopSection extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     let { picCount, picArray } = this.state;
     return (
       <>
@@ -83,8 +83,8 @@ export default class TopSection extends Component {
             <HomeTextContainer>
               <HomeTextPri>On sale 25% Discount</HomeTextPri>
               <HomeButtonContainer>
-                <HomeButtonLink to={"/"}>CLOTHES</HomeButtonLink>
-                <HomeButtonLink to={"/"}>TECH</HomeButtonLink>
+                <HomeButtonLink to={"/clothes"}>CLOTHES</HomeButtonLink>
+                <HomeButtonLink to={"/tech"}>TECH</HomeButtonLink>
               </HomeButtonContainer>
             </HomeTextContainer>
             <ChangePicIconBox>
@@ -112,7 +112,7 @@ export default class TopSection extends Component {
                   good at all
                 </HomeTextMinor>
                 <HomeButtonContainer>
-                  <HomeButtonLink to={"/"}>CLOTHES</HomeButtonLink>
+                  <HomeButtonLink to={"/clothes"}>CLOTHES</HomeButtonLink>
                 </HomeButtonContainer>
               </HomeTextContainer>
             </MiddlePicLeftBox>
@@ -126,7 +126,7 @@ export default class TopSection extends Component {
                   season
                 </HomeTextMinor>
                 <HomeButtonContainer>
-                  <HomeButtonLink to={"/"}>SHOP NOW</HomeButtonLink>
+                  <HomeButtonLink to={"/all"}>SHOP NOW</HomeButtonLink>
                 </HomeButtonContainer>
               </HomeTextContainer>
             </MiddlePicRightBox>
@@ -141,7 +141,7 @@ export default class TopSection extends Component {
                 this season
               </HomeTextMinor>
               <HomeButtonContainer>
-                <HomeButtonLink to={"/"}>SEE ALL PRODUCTS</HomeButtonLink>
+                <HomeButtonLink to={"/all"}>SEE ALL PRODUCTS</HomeButtonLink>
               </HomeButtonContainer>
             </HomeTextContainer>
           </HomeBottomPicBox>

@@ -41,7 +41,7 @@ export class FeatureSection extends Component {
       <>
         <FeatureSectionContainer>
           <FeatureSectionHeader>FEATURED PRODUCTS</FeatureSectionHeader>
-          <MainContainer>
+          <MainContainer home={"true"}>
             <ProductsContainer>
               {featureProduct.map((item, index) => {
                 return (
@@ -56,7 +56,7 @@ export class FeatureSection extends Component {
             </ProductsContainer>
           </MainContainer>
           <HomeButtonContainer>
-            <HomeButtonAltLink to={"/"}>VIEW ALL</HomeButtonAltLink>
+            <HomeButtonAltLink to={"/all"}>VIEW ALL</HomeButtonAltLink>
           </HomeButtonContainer>
         </FeatureSectionContainer>
       </>

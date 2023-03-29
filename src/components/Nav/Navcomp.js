@@ -20,10 +20,12 @@ export class Navcomp extends Component {
       <Nav>
         <NavWrapper>
           <CategoriesNav />
-          <LogoContainer>
+
+          <LogoContainer to={"/"}>
             <LogoText home={loc === "/" ? "true" : ""}>SPREE SHOP</LogoText>
             <LogoImage src={logo} alt="logo" />
           </LogoContainer>
+
           <CurrCartWrap>
             <CurrencyNav />
             <CartNav />
