@@ -9,7 +9,7 @@ export const HomeTopContainer = styled.div`
   width: 100%;
   height: 140vh;
   position: relative;
-  background-color: #fafafa;
+  background-color: #ccd5ae;
 
   @media screen and (max-width: 920px) {
     height: 100vh;
@@ -181,7 +181,7 @@ export const ChangePicIcon = styled.div`
 export const HomeImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({ contain }) => (contain === "true" ? "contain" : "cover")};
   transition: all 1s ease-in;
 `;
 
@@ -224,16 +224,17 @@ export const HomeBottomPicBox = styled.div`
   height: 110vh;
   position: relative;
   overflow: hidden;
+  background: #edf6f9;
   transition: all 1s ease-in;
 `;
 
 export const HomeImageMiddleLeft = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({ contain }) => (contain === "true" ? "contain" : "cover")};
   transition: all 0.5s ease-in;
   ${MiddlePicLeftBox}:hover & {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 1s ease-in;
   }
 `;
@@ -241,10 +242,10 @@ export const HomeImageMiddleLeft = styled.img`
 export const HomeImageMiddleRight = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({ contain }) => (contain === "true" ? "contain" : "cover")};
   transition: all 0.5s ease-in;
   ${MiddlePicRightBox}:hover & {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 1s ease-in;
   }
 `;
@@ -252,10 +253,10 @@ export const HomeImageMiddleRight = styled.img`
 export const HomeImageBottom = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: ${({ contain }) => (contain === "true" ? "contain" : "cover")};
   transition: all 0.5s ease-in;
   ${HomeBottomPicBox}:hover & {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 1s ease-in;
   }
 `;

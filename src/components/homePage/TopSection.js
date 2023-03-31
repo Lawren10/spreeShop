@@ -23,9 +23,10 @@ import {
 } from "../../styled-compomets/homeStyledComp";
 
 import pic01 from "../../asset/pic01.webp";
-import pic02 from "../../asset/pic02.webp";
-import pic03 from "../../asset/pic03.webp";
-import pic04 from "../../asset/pic04.webp";
+import pic02 from "../../asset/pic02.png";
+import pic03 from "../../asset/pic03.jpg";
+import pic04 from "../../asset/pic04.png";
+import pic05 from "../../asset/pic05.jpg";
 
 import {
   HiOutlineArrowNarrowLeft,
@@ -38,7 +39,7 @@ export default class TopSection extends Component {
 
     this.state = {
       picCount: 0,
-      picArray: [pic01, pic02, pic04],
+      picArray: [pic02, pic03, pic01],
     };
   }
 
@@ -79,7 +80,10 @@ export default class TopSection extends Component {
       <>
         <HomeContainer>
           <HomeTopContainer>
-            <HomeImage src={picArray[picCount]} />
+            <HomeImage
+              src={picArray[picCount]}
+              contain={`${picCount === 0 ? "true" : "false"}`}
+            />
             <HomeTextContainer>
               <HomeTextPri>On sale 25% Discount</HomeTextPri>
               <HomeButtonContainer>
@@ -104,7 +108,7 @@ export default class TopSection extends Component {
 
           <HomeMiddlePicBox>
             <MiddlePicLeftBox>
-              <HomeImageMiddleLeft src={pic04} />
+              <HomeImageMiddleLeft src={pic05} />
               <HomeTextContainer>
                 <HomeTextSec>Autum Vibes</HomeTextSec>
                 <HomeTextMinor>
@@ -133,7 +137,7 @@ export default class TopSection extends Component {
           </HomeMiddlePicBox>
 
           <HomeBottomPicBox>
-            <HomeImageBottom src={pic02} />
+            <HomeImageBottom src={pic04} contain={"true"} />
             <HomeTextContainer>
               <HomeTextPri>Limited Edition</HomeTextPri>
               <HomeTextMinor>

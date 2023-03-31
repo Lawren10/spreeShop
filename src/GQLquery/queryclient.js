@@ -1,7 +1,7 @@
 import { GraphQLClient } from "graphql-request";
 
-const Client = new GraphQLClient("http://localhost:4000/");
+const Client = new GraphQLClient("https://graphqlbackend.netlify.app/");
 
 export default Client;
 
-//  http://graphqlbackend.netlify.app/
+//   http://localhost:4000/
