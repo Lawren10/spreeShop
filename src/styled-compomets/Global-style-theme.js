@@ -14,6 +14,7 @@ body{
  font-family:'Raleway', sans-serif;
  color:#1d1f22;
  scroll-behavior:smooth;
+ background-color:#ffff;
 }
 
 ::-webkit-scrollbar {
