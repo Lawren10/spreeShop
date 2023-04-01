@@ -1,5 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+
+const changeOpacity = keyframes`
+0% {
+    opacity:0;
+  }
+
+  50% {
+    
+    opacity:0.5;
+  }
+
+  100%{
+    opacity:1;
+  }
+`;
 
 export const HomeContainer = styled.section`
   width: 100%;
@@ -182,7 +197,7 @@ export const HomeImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: ${({ contain }) => (contain === "true" ? "contain" : "cover")};
-  transition: all 1s ease-in;
+  animation: ${changeOpacity} 2s ease-in-out forwards;
 `;
 
 export const HomeMiddlePicBox = styled.div`

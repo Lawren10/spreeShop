@@ -23,9 +23,9 @@ import {
 } from "../../styled-compomets/homeStyledComp";
 
 import pic01 from "../../asset/pic01.webp";
-import pic02 from "../../asset/pic02.png";
+import pic02 from "../../asset/pic02.webp";
 import pic03 from "../../asset/pic03.jpg";
-import pic04 from "../../asset/pic04.png";
+import pic04 from "../../asset/pic04.webp";
 import pic05 from "../../asset/pic05.jpg";
 
 import {
@@ -39,7 +39,7 @@ export default class TopSection extends Component {
 
     this.state = {
       picCount: 0,
-      picArray: [pic02, pic03, pic01],
+      picArray: [pic01, pic04, pic02],
     };
   }
 
@@ -73,6 +73,12 @@ export default class TopSection extends Component {
     }));
   };
 
+  componentDidMount() {
+    setInterval(() => {
+      this.updatePicPos();
+    }, 10000);
+  }
+
   render() {
     // console.log(this.state);
     let { picCount, picArray } = this.state;
@@ -82,7 +88,7 @@ export default class TopSection extends Component {
           <HomeTopContainer>
             <HomeImage
               src={picArray[picCount]}
-              contain={`${picCount === 0 ? "true" : "false"}`}
+              // contain={`${picCount === 0 ? "true" : "false"}`}
             />
             <HomeTextContainer>
               <HomeTextPri>On sale 25% Discount</HomeTextPri>
@@ -108,7 +114,7 @@ export default class TopSection extends Component {
 
           <HomeMiddlePicBox>
             <MiddlePicLeftBox>
-              <HomeImageMiddleLeft src={pic05} />
+              <HomeImageMiddleLeft src={pic04} />
               <HomeTextContainer>
                 <HomeTextSec>Autum Vibes</HomeTextSec>
                 <HomeTextMinor>
@@ -137,7 +143,7 @@ export default class TopSection extends Component {
           </HomeMiddlePicBox>
 
           <HomeBottomPicBox>
-            <HomeImageBottom src={pic04} contain={"true"} />
+            <HomeImageBottom src={pic05} />
             <HomeTextContainer>
               <HomeTextPri>Limited Edition</HomeTextPri>
               <HomeTextMinor>

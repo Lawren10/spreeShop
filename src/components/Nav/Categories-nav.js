@@ -56,13 +56,13 @@ export class CategoriesNav extends Component {
               );
             })}
         </CategoriesNavLinkWrap>
-        <GoToShopLink
+        {/* <GoToShopLink
           to="/all"
           home={check ? "true" : ""}
           color={loc === "/cart" ? "true" : ""}
         >
           Shop <HiOutlineArrowNarrowRight />
-        </GoToShopLink>
+        </GoToShopLink> */}
       </CategoriesNavWrap>
     );
   }

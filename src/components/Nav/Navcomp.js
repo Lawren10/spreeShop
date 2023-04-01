@@ -21,7 +21,7 @@ export class Navcomp extends Component {
         <NavWrapper>
           <CategoriesNav />
 
-          <LogoContainer to={"/"}>
+          <LogoContainer to={"/"} shift={loc === "/" ? "" : "true"}>
             <LogoText home={loc === "/" ? "true" : ""}>SPREE SHOP</LogoText>
             <LogoImage src={logo} alt="logo" />
           </LogoContainer>

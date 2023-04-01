@@ -244,7 +244,7 @@ export const GoToShopLink = styled(Link)`
 
 export const LogoContainer = styled(Link)`
   position: relative;
-  margin-left: auto;
+  margin-left: ${({ shift }) => (shift === "true" ? "auto" : "")};
   text-decoration: none;
   @media screen and (max-width: 550px) {
     align-self: center;
