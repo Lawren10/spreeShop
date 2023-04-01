@@ -3,9 +3,9 @@ import {
   NavButton,
   CategoriesNavWrap,
   CategoriesNavLinkWrap,
-  GoToShopLink,
+  // GoToShopLink,
 } from "../../styled-compomets/Navcomp-styles";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import GetParmas from "../HocComp";
 import { Action } from "../../redux/storereducer";
 import { connect } from "react-redux";
